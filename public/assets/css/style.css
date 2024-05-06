@@ -1,0 +1,126 @@
+/* Custom Style */
+body {
+  overflow-x: hidden;
+  display: flex;flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.offcanvas {
+  --bs-offcanvas-height: 50vh;
+}
+
+.scrollToTop {
+  padding: 10px;
+  color: #444;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 99;
+}
+
+.owl-item.active.center h5,
+.owl-item.active.center span {
+  color: #000;
+}
+
+@media screen and (max-width: 1023px) {
+  #myCarousel .carousel-item img {
+    height: auto !important;
+  }
+}
+
+.card {
+  border: none;
+}
+
+.card-title-main {
+  font-size: 48px;
+  white-space: nowrap;
+}
+
+.card-text-main {
+  font-size: 21px;
+}
+
+.button {
+  width: 50%;
+  background-color: #553ce9;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 8px 8px 12px #998cdfbb;
+}
+
+.button:hover,
+.button:focus {
+  transform: translateY(-6px);
+  background-color: whitesmoke;
+  transition: all .3s ease-in-out 0s;
+}
+
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+
+button:hover::after,
+button:focus::after {
+  transition: all .3s ease-in-out 0s;
+
+}
+
+.btn-iconed.btn-flat {
+  border-radius: 0rem;
+}
+
+/** Rounded button **/
+.btn-rounded {
+  border-radius: 5rem;
+}
+
+/** Button Iconed **/
+.btn-iconed {
+  transition: 0.15s ease-in-out;
+  padding-left: 1.3rem;
+  padding-right: 1.5rem;
+}
+
+.btn-iconed [class~=oi],
+.btn-iconed [class~=fa],
+.btn-iconed [class~=typcn]::before,
+.btn-iconed [class~=mdi]::before,
+.btn-iconed [class~=icon]::before {
+  opacity: 0;
+  transform-origin: left right;
+  transform: translateX(-10px) scale(1.25);
+  transition: 0.15s ease-out;
+}
+
+.btn-iconed [class=spn] {
+  position: relative;
+  left: -9px;
+  transform-origin: left right;
+  transform: translateX(-9px);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-iconed:hover [class~=oi],
+.btn-iconed:hover [class~=fa],
+.btn-iconed:hover [class~=mdi]::before,
+.btn-iconed:hover [class~=icon]::before,
+.btn-iconed:hover [class~=typcn]::before {
+  opacity: 1;
+  transform: translateX(0px) scale(0.75);
+}
+
+.btn-iconed:hover [class=spn] {
+  left: 0px;
+}
+
+#site-footer {
+  position: relative;
+    bottom: 0;
+    width: 100%;
+}
